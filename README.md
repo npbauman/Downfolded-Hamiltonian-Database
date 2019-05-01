@@ -18,22 +18,22 @@ Some things to be aware of:
      information about the particular downfolded Hamiltonian. The downfolding can 
      occur for the virtual orbitals, the occupied orbitals, or both, which is 
      important when running posterior calculations.
-  2. Be aware of the source of the cluster amplitudes. The DUCC formalism is a 
-     a way of providing unitary Hamlitonians, but in practice the source of the
+  2. Be aware of the source of the cluster amplitudes. The DUCC formalism is
+     a way of providing unitary Hamiltonians, but in practice, the source of the
      amplitudes that create the unitary ansatz may not be from a unitary 
      coupled-cluster method.
-  3. In the information there will be a nuclear repulsion energy and possibly a 
+  3. In the information, there will be a nuclear repulsion energy and possibly a 
      value for a 'shift' that may have to be added to/incorporated into any 
-     calculation with the downfolded Hamltonian. 
+     calculation with the downfolded Hamiltonian. 
      
-Each subdirectory will contain a NWCHEM input, output, and files for the one- and 
+Each subdirectory will contain an NWCHEM input, output, and files for the one- and 
 two-electron integrals. The integrals are outputted as either a '.YAML' or 'FCIDUMP'
 file. The one-electron integrals are of the core-Hamiltonian type
 
 <img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;\left&space;|&space;h&space;\right&space;|&space;j&space;\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;\psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})," title="\left ( i \left | h \right | j \right ) = \int d\mathbf{r_{1}} \psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})," />
 
-while the two-electron integrals are stored using the Mullikan convention
+while the two-electron integrals are stored using the Mulliken convention
 
 <img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;j&space;|&space;k&space;l\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;d\mathbf{r_{2}}&space;\psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." title="\left ( i j | k l\right ) = \int d\mathbf{r_{1}} d\mathbf{r_{2}} \psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." />
 
-In both cases, the indicies correspond to **'spacial'** orbitals. 
+In both cases, the indices correspond to **'spatial'** orbitals. 
