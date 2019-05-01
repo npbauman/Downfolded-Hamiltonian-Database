@@ -20,6 +20,15 @@ Some things to be aware of:
      important when running posterior calculations.
   2. Be aware of the source of the cluster amplitudes. The DUCC formalism is a 
      a way of providing unitary Hamlitonians, but in practice the source of the
-     amplitudes that create the unitary ansatz may not be from a unitary coupled-
-     cluster method.
+     amplitudes that create the unitary ansatz may not be from a unitary 
+     coupled-cluster method.
+  3. In the information there will be a nuclear repulsion energy and possibly a 
+     value for a 'shift' that may have to be added to/incorporated into any 
+     calculation with the downfolded Hamltonian. 
+     
+Each subdirectory will contain a NWCHEM input, output, and files for the one- and 
+two-electron integrals. The integrals are outputted as either a '.YAML' or 'FCIDUMP'
+file. The one-electron integrals are of the core-Hamiltonian type:
+
+\left ( i \left | h \right | j \right ) = \int d\mathbf{r_{1}} \psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})
      
