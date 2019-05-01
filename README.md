@@ -28,6 +28,7 @@ Some things to be aware of:
      
 Each subdirectory will contain a NWCHEM input, output, and files for the one- and 
 two-electron integrals. The integrals are outputted as either a '.YAML' or 'FCIDUMP'
-file. The one-electron integrals are of the core-Hamiltonian type:
-
+file. The one-electron integrals are of the core-Hamiltonian type
 <img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;\left&space;|&space;h&space;\right&space;|&space;j&space;\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;\psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})," title="\left ( i \left | h \right | j \right ) = \int d\mathbf{r_{1}} \psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})," />
+while the two-electron integrals are stored using the Mullikan convention
+<img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;j&space;|&space;k&space;l\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;d\mathbf{r_{2}}&space;\psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." title="\left ( i j | k l\right ) = \int d\mathbf{r_{1}} d\mathbf{r_{2}} \psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." />
