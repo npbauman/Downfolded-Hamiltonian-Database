@@ -30,5 +30,5 @@ Each subdirectory will contain a NWCHEM input, output, and files for the one- an
 two-electron integrals. The integrals are outputted as either a '.YAML' or 'FCIDUMP'
 file. The one-electron integrals are of the core-Hamiltonian type:
 
-\left ( i \left | h \right | j \right ) = \int d\mathbf{r_{1}} \psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})
+$\left ( i \left | h \right | j \right ) = \int d\mathbf{r_{1}} \psi_{i}^{*}(\mathbf{r_{1}})h(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})$
      
