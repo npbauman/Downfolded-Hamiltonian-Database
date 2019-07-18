@@ -34,6 +34,6 @@ file. The one-electron integrals are of the core-Hamiltonian type
 
 while the two-electron integrals are stored using the Mulliken convention
 
-<img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;j&space;|&space;k&space;l\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;d\mathbf{r_{2}}&space;\psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." title="\left ( i j | k l\right ) = \int d\mathbf{r_{1}} d\mathbf{r_{2}} \psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." />
+<img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;j&space;|&space;k&space;l\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;d\mathbf{r_{2}}&space;\psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." title="\left ( i j | k l\right ) = \int \int d\mathbf{r_{1}} d\mathbf{r_{2}} \psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." />
 
 In both cases, the indices correspond to **'spatial'** orbitals. 
