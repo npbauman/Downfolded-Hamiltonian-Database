@@ -1,4 +1,4 @@
-# Downfolded-Hamiltonian-Database
+# Downfolded Hamiltonian Database
 
 This repository contains a collection of Hamiltonians obtained from the double 
 unitary coupled-cluster (DUCC) formalism described in the following paper:
@@ -37,3 +37,22 @@ while the two-electron integrals are stored using the Mulliken convention
 <img src="https://latex.codecogs.com/svg.latex?\left&space;(&space;i&space;j&space;|&space;k&space;l\right&space;)&space;=&space;\int&space;d\mathbf{r_{1}}&space;d\mathbf{r_{2}}&space;\psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." title="\left ( i j | k l\right ) = \int d\mathbf{r_{1}} d\mathbf{r_{2}} \psi_{i}^{*}(\mathbf{r_{1}})\psi_{j}(\mathbf{r_{1}})r_{12}^{-1}\psi_{k}^{*}(\mathbf{r_{2}})\psi_{l}(\mathbf{r_{2}})." />
 
 In both cases, the indices correspond to **'spatial'** orbitals. 
+
+# Note about active spaces
+
+A simple description of each active space is provided in corresponding directories 
+for each molecule and basis set. The active spaces are chosen based on either a 
+general molecular orbital diagram or such that there is a significant difference 
+in energy between highest(lowest) energy unoccupied(occupied) orbital in the active 
+space and the next highest(lowest) energy unoccupied(occupied) orbital outside of 
+the active space. The latter argument is important because from a perturbative 
+analysis stand point, if the active-space orbitals are well seperated energetically 
+from the remaining orbitals, the external amplitudes defining the downfolded Hamiltonian
+are better approximated. That is because one can expect that the corresponding pertubative 
+denominators are much larger than those used to define excitations within the active space
+and which are determined in the diagonalization of the downfolded Hamiltonian. Along with the
+choice of active-space, a series of other approximations are used to define the downfolded 
+Hamiltonians (descriptions can be found in each directory), but the larger the active space
+the closer thee approximate downfolded Hamiltonian is to the exact downfolded Hamiltonian
+(i.e. the one that gives the exact FCI value). It is generally best to use the largest active
+whenever possible. 
