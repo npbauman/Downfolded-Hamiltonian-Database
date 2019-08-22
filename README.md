@@ -46,9 +46,9 @@ general molecular orbital diagram or such that there is a significant difference
 in energy between highest(lowest) energy unoccupied(occupied) orbital in the active 
 space and the next highest(lowest) energy unoccupied(occupied) orbital outside of 
 the active space. The latter argument is important because from a perturbative 
-analysis stand point, if the active-space orbitals are well seperated energetically 
+analysis standpoint, if the active-space orbitals are well separated energetically 
 from the remaining orbitals, the external amplitudes defining the downfolded Hamiltonian
-are better approximated. That is because one can expect that the corresponding pertubative 
+are better approximated. That is because one can expect that the corresponding perturbative 
 denominators are much larger than those used to define excitations within the active space
 and which are determined in the diagonalization of the downfolded Hamiltonian. Along with the
 choice of active-space, a series of other approximations are used to define the downfolded 
