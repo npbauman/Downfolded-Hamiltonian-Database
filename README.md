@@ -38,7 +38,7 @@ while the two-electron integrals are stored using the Mulliken convention
 
 In both cases, the indices correspond to **'spatial'** orbitals. 
 
-# Note about active spaces
+# Note About Active Spaces
 
 A simple description of each active space is provided in corresponding directories 
 for each molecule and basis set. The active spaces are chosen based on either a 
